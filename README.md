@@ -14,16 +14,16 @@ Is an virtual environment which will let configure different python projects eas
 Pip is a package management system used to install and manage software packages, such as those found in the Python Package Index
 
 # Setup
-## Create a virtualenv
+### Create a virtualenv
 ```virtualenv <name>```
 
 ### Start using the virtualenv
 ```source <name>/bin/activate```
 
-## Install a virtualenv with requirments
+### Install a virtualenv with requirments
 ```pip install -r requirements.txt```
 
-## Run the metadata.py script
+### Run the metadata.py script
 `python metadata.py`
 
 # Strategy To Solve
