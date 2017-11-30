@@ -3334,3 +3334,981 @@ JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: Type
 1512008447267	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
 1512008447376	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
 1512008447627	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009013757	geckodriver	INFO	geckodriver 0.19.1
+1512009013762	geckodriver	INFO	Listening on 127.0.0.1:49279
+1512009014906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.DfkZeiyD2KcI"
+1512009015297	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009015298	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009015303	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009015303	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009015489	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009017127	Marionette	INFO	Listening on port 36633
+1512009017218	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009017322	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009017392	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009017990	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009018704	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009022544	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009022853	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009022952	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009023086	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009023087	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009023193	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009023480	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009023537	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009023644	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009023645	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009023764	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009024056	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009024125	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009024235	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009024236	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009024349	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009024627	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 24693, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /build/firefox-uR1ZTL/firefox-58.0~b3+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1512009097673	geckodriver	INFO	geckodriver 0.19.1
+1512009097677	geckodriver	INFO	Listening on 127.0.0.1:60511
+1512009098798	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.15A2Rcd17JGR"
+1512009099157	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009099158	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009099163	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009099163	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009099331	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009100838	Marionette	INFO	Listening on port 35239
+1512009100913	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009101019	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009101056	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009101457	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009102152	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009104887	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009105183	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009105258	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009105378	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009105379	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009105557	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009105953	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009105986	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009106120	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009106121	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009106303	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009106574	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009106632	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009106763	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009106764	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009106950	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009107242	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009194064	geckodriver	INFO	geckodriver 0.19.1
+1512009194071	geckodriver	INFO	Listening on 127.0.0.1:36735
+1512009195190	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.et68KWMXzjCt"
+1512009195537	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009195537	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009195542	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009195542	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009195689	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009197201	Marionette	INFO	Listening on port 38275
+1512009197308	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009197408	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009197442	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009197897	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009199685	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009202444	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009202730	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009202827	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009202949	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009202950	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009203055	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009203446	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009203478	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009203585	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009203587	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009203718	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009204102	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009204152	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009204259	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009204261	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009204376	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009204763	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1512009223807	geckodriver	INFO	geckodriver 0.19.1
+1512009223812	geckodriver	INFO	Listening on 127.0.0.1:35823
+1512009224933	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fDr58NCx5nem"
+1512009225277	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009225277	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009225282	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009225282	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009225435	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009226901	Marionette	INFO	Listening on port 41381
+1512009226959	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009227054	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009227096	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009227480	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009228699	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009231444	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009231741	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009231832	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009231940	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009231941	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009232090	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009232379	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009232442	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009232557	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009232559	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009232662	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009232940	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009233003	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009233106	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009233107	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009233225	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009233507	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009408540	geckodriver	INFO	geckodriver 0.19.1
+1512009408547	geckodriver	INFO	Listening on 127.0.0.1:43739
+1512009409661	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.izKlaH1B5Hnr"
+1512009410003	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009410004	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009410009	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009410009	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009410168	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009411707	Marionette	INFO	Listening on port 43861
+1512009411772	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009411898	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009411933	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009412296	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009413479	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009413816	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009414169	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009419115	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009419237	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009419237	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009419365	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009419682	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009419740	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009419847	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009419849	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009419951	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009420229	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009420288	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009420407	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009420408	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009420523	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009420811	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009433899	Marionette	DEBUG	Register listener.js for window 4294967297
+1512009433948	Marionette	DEBUG	Register listener.js for window 4294967299
+1512009434653	Marionette	DEBUG	Register listener.js for window 4294967303
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512009619453	geckodriver	INFO	geckodriver 0.19.1
+1512009619459	geckodriver	INFO	Listening on 127.0.0.1:55381
+1512009620583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.byLC6uQihNak"
+1512009620948	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009620949	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009620953	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009620954	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009621125	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009622608	Marionette	INFO	Listening on port 43729
+1512009622697	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009622789	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009622834	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009623297	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009625180	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009628982	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009629285	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009629332	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009629479	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009629479	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009629590	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009629874	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009629933	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009630034	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009630035	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009630147	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009630420	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009630479	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009630583	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009630584	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009630692	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009631090	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512009714006	geckodriver	INFO	geckodriver 0.19.1
+1512009714012	geckodriver	INFO	Listening on 127.0.0.1:55013
+1512009715138	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.h4fqIEP0RPKw"
+1512009715478	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009715479	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009715484	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009715484	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009715654	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009717195	Marionette	INFO	Listening on port 41633
+1512009717251	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009717344	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009717381	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009717775	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009718444	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009721192	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009721513	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009721616	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009721722	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009721724	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009721835	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009722150	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009722203	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009722306	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009722309	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009722418	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009722696	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009722751	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009722868	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009722870	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009722992	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009723262	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009785598	geckodriver	INFO	geckodriver 0.19.1
+1512009785603	geckodriver	INFO	Listening on 127.0.0.1:47013
+1512009786719	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QjovHXG0m9m8"
+1512009787093	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009787094	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009787102	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009787102	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009787261	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009788784	Marionette	INFO	Listening on port 41361
+1512009788853	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009788976	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009789006	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009789392	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009791212	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009793055	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009793374	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009793482	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009793590	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009793591	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009793692	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009794017	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009794088	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009794189	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009794189	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009794295	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009794582	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009794634	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009794736	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009794736	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009794861	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009795270	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009816851	geckodriver	INFO	geckodriver 0.19.1
+1512009816857	geckodriver	INFO	Listening on 127.0.0.1:34173
+1512009817974	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.KFhiPOATw4Il"
+1512009818331	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009818331	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009818336	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512009818337	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512009818489	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512009819933	Marionette	INFO	Listening on port 37251
+1512009820002	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512009820159	Marionette	DEBUG	Register listener.js for window 2147483649
+1512009820241	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512009820792	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512009822846	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009827863	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009828204	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512009828308	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009828439	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009828440	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512009828593	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009829002	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009829040	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009829172	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009829172	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512009829357	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009829749	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009829788	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009829933	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009829933	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512009830058	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512009830358	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512010052811	geckodriver	INFO	geckodriver 0.19.1
+1512010052817	geckodriver	INFO	Listening on 127.0.0.1:36109
+1512010053937	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FjQ6ZYTJcPvF"
+1512010054301	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512010054302	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512010054307	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512010054307	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512010054480	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512010056092	Marionette	INFO	Listening on port 44947
+1512010056157	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512010056279	Marionette	DEBUG	Register listener.js for window 2147483649
+1512010056322	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512010057730	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512010058940	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010060680	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010060988	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512010061094	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010061216	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010061217	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010061320	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010061594	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010061653	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010061753	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010061754	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010061857	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010062149	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010062216	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010062374	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010062375	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010062486	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512010062761	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+[Child 27225, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-uR1ZTL/firefox-58.0~b3+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1512010925396	geckodriver	INFO	geckodriver 0.19.1
+1512010925403	geckodriver	INFO	Listening on 127.0.0.1:35263
+1512010926533	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.qE26J7shq2JD"
+1512010926876	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512010926877	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512010926881	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512010926882	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512010927061	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512010928595	Marionette	INFO	Listening on port 45981
+1512010928652	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512010928747	Marionette	DEBUG	Register listener.js for window 2147483649
+1512010928811	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512010929287	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512010930114	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010933999	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010934308	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512010934424	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010934534	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010934534	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512010934653	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010934944	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010935005	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010935118	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010935119	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512010935247	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010935543	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010935608	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010935717	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010935718	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512010935840	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512010936119	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 28418, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-uR1ZTL/firefox-58.0~b3+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1512011652284	geckodriver	INFO	geckodriver 0.19.1
+1512011652290	geckodriver	INFO	Listening on 127.0.0.1:41065
+1512011653410	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kUM9y4BcbOGL"
+1512011653751	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512011653752	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512011653756	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512011653757	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512011653935	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512011655517	Marionette	INFO	Listening on port 41697
+1512011655531	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512011655623	Marionette	DEBUG	Register listener.js for window 2147483649
+1512011655649	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512011656192	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512011657770	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011658572	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011658890	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512011658987	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011659094	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011659096	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011659198	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011659483	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011659543	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011659662	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011659663	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011659776	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011660053	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011660115	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011660248	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011660249	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011660365	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512011660626	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512011865188	geckodriver	INFO	geckodriver 0.19.1
+1512011865195	geckodriver	INFO	Listening on 127.0.0.1:54969
+1512011866314	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9YMOgno0zhG9"
+1512011866655	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512011866655	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512011866660	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512011866660	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512011866826	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512011868335	Marionette	INFO	Listening on port 34685
+1512011868427	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512011868527	Marionette	DEBUG	Register listener.js for window 2147483649
+1512011868567	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512011868955	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512011870148	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011872082	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011872382	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512011872496	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011872622	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011872625	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512011872784	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011873190	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011873231	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011873369	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011873370	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512011873585	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011873981	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011874016	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011874126	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011874127	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512011874264	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512011874538	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012042875	geckodriver	INFO	geckodriver 0.19.1
+1512012042880	geckodriver	INFO	Listening on 127.0.0.1:45943
+1512012043997	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.f90fFRrbk4xf"
+1512012044370	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012044370	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012044375	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012044375	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012044524	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512012046068	Marionette	INFO	Listening on port 39651
+1512012046116	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512012046210	Marionette	DEBUG	Register listener.js for window 2147483649
+1512012046246	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512012046621	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512012048407	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012051202	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012051523	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512012051624	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012051738	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012051739	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012051853	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012052144	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012052204	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012052343	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012052344	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012052448	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012052721	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012052775	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012052904	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012052904	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012053019	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012053296	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012222088	geckodriver	INFO	geckodriver 0.19.1
+1512012222092	geckodriver	INFO	Listening on 127.0.0.1:41245
+1512012223211	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zPGGxleTPJJI"
+1512012223575	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012223575	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012223580	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012223580	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012223740	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512012225259	Marionette	INFO	Listening on port 42991
+1512012225322	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512012225450	Marionette	DEBUG	Register listener.js for window 2147483649
+1512012225496	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512012225868	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512012227648	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012232125	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012232424	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512012232483	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012232606	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012232607	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012232747	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012233140	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012233180	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012233287	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012233289	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012233392	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012233676	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012233733	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012233839	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012233840	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012233960	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012234240	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1512012344406	geckodriver	INFO	geckodriver 0.19.1
+1512012344412	geckodriver	INFO	Listening on 127.0.0.1:39321
+1512012345538	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ZeQmLJlF0E3i"
+1512012345887	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012345888	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012345893	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012345893	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012346056	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512012347564	Marionette	INFO	Listening on port 42021
+1512012347650	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512012347747	Marionette	DEBUG	Register listener.js for window 2147483649
+1512012347771	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512012348226	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512012348985	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012351728	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012352047	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512012352153	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012352284	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012352287	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012352400	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012352681	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012352744	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012352853	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012352854	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012352958	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012353232	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012353290	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012353394	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012353396	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012353503	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012353763	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512012454695	geckodriver	INFO	geckodriver 0.19.1
+1512012454700	geckodriver	INFO	Listening on 127.0.0.1:40523
+1512012455819	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.anFuemV5DbH6"
+1512012456194	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012456195	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012456199	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012456200	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012456369	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512012457957	Marionette	INFO	Listening on port 43501
+1512012458046	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512012458146	Marionette	DEBUG	Register listener.js for window 2147483649
+1512012458188	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512012458596	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512012459849	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012460205	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012460544	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512012462488	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012462604	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012462605	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012462731	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012463039	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012463109	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012463214	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012463215	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012463350	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012463621	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012463678	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012463783	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012463784	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012463899	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012464179	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012590635	geckodriver	INFO	geckodriver 0.19.1
+1512012590641	geckodriver	INFO	Listening on 127.0.0.1:50761
+1512012591762	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.DXDyEzDGU2j9"
+1512012592115	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012592115	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012592120	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512012592121	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512012592296	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512012593786	Marionette	INFO	Listening on port 44083
+1512012593875	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512012593968	Marionette	DEBUG	Register listener.js for window 2147483649
+1512012594002	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512012594596	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512012596522	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012599597	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012599897	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512012600025	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012600135	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012600137	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512012600253	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012600635	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012600682	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012600812	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012600813	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512012600923	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012601323	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012601377	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012601503	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012601505	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512012601626	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512012602015	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512036566495	geckodriver	INFO	geckodriver 0.19.1
+1512036566498	geckodriver	INFO	Listening on 127.0.0.1:60973
+1512036567629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.z1okISfXDRRj"
+1512036567992	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512036567993	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512036567997	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512036567998	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512036568176	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512036569680	Marionette	INFO	Listening on port 40701
+1512036569744	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512036569872	Marionette	DEBUG	Register listener.js for window 2147483649
+1512036569918	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512036572371	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512036575006	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036577684	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036578010	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512036578113	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036578241	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036578244	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036578428	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036578860	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036578907	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036579029	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036579031	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036579159	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036579590	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036579626	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036579753	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036579754	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036579882	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512036580296	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 480, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-uR1ZTL/firefox-58.0~b3+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1512036661676	geckodriver	INFO	geckodriver 0.19.1
+1512036661681	geckodriver	INFO	Listening on 127.0.0.1:50589
+1512036662813	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.8xEcaeAGYcI6"
+1512036663175	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512036663176	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512036663180	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512036663181	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512036663328	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512036664888	Marionette	INFO	Listening on port 39165
+1512036664933	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512036665062	Marionette	DEBUG	Register listener.js for window 2147483649
+1512036665107	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512036665779	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512036668518	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036669680	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036669983	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512036670060	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036670180	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036670182	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036670467	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036670893	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036670931	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036671086	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036671087	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036671292	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036671699	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036671734	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036671854	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036671855	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036672080	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512036672486	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512036772641	geckodriver	INFO	geckodriver 0.19.1
+1512036772647	geckodriver	INFO	Listening on 127.0.0.1:46615
+1512036773766	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.UzugGuApCJOy"
+1512036774106	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512036774107	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512036774112	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512036774112	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512036774280	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512036775746	Marionette	INFO	Listening on port 36185
+1512036775784	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512036775879	Marionette	DEBUG	Register listener.js for window 2147483649
+1512036775900	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512036777217	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512036779679	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036783347	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036783672	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512036783781	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036783909	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036783911	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512036784185	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036784641	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036784678	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036784804	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036784805	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512036785006	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036785420	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036785453	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036785572	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036785573	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512036785770	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512036786178	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512038269107	geckodriver	INFO	geckodriver 0.19.1
+1512038269112	geckodriver	INFO	Listening on 127.0.0.1:53759
+1512038270236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.hVYnm8BuYaRJ"
+1512038270597	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512038270597	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512038270602	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512038270602	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512038270754	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512038272324	Marionette	INFO	Listening on port 44383
+1512038272360	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512038272490	Marionette	DEBUG	Register listener.js for window 2147483649
+1512038272530	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512038273116	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512038275559	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038276708	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038277021	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512038277135	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038277262	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038277262	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038277454	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038277952	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038277991	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038278117	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038278118	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038278235	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038278649	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038278683	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038278808	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038278808	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038278934	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512038279377	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512038603404	geckodriver	INFO	geckodriver 0.19.1
+1512038603410	geckodriver	INFO	Listening on 127.0.0.1:38741
+1512038604521	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.dQpDiMqwu5Fz"
+1512038604882	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512038604883	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512038604888	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512038604888	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512038605039	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512038606718	Marionette	INFO	Listening on port 45295
+1512038606737	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512038606837	Marionette	DEBUG	Register listener.js for window 2147483649
+1512038606882	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512038607751	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512038610630	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038611742	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038612053	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512038612247	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038612398	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038612399	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038612707	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038613150	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038613193	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038613321	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038613322	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038613516	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038613925	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038613969	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038614092	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038614093	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038614301	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512038614720	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512038768451	geckodriver	INFO	geckodriver 0.19.1
+1512038768457	geckodriver	INFO	Listening on 127.0.0.1:40297
+1512038769577	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WLbfK6NXb38z"
+1512038769916	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512038769917	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512038769921	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512038769922	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512038770079	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512038771585	Marionette	INFO	Listening on port 41167
+1512038771694	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512038771806	Marionette	DEBUG	Register listener.js for window 2147483649
+1512038771847	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512038772551	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512038774863	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038775954	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038776247	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512038776320	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038776451	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038776452	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512038776547	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038776969	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038777009	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038777130	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038777131	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512038777243	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038777657	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038777713	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038777837	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038777838	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512038777948	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512038778350	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039112540	geckodriver	INFO	geckodriver 0.19.1
+1512039112547	geckodriver	INFO	Listening on 127.0.0.1:48361
+1512039113673	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.0czjPztxFF2J"
+1512039114015	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039114016	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039114021	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039114021	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039114189	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512039115701	Marionette	INFO	Listening on port 39173
+1512039115786	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512039115880	Marionette	DEBUG	Register listener.js for window 2147483649
+1512039115915	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512039116389	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512039117730	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039119999	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039120292	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512039120389	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039120509	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039120510	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039120819	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039121222	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039121255	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039121382	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039121383	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039121664	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039122082	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039122112	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039122238	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039122238	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039122464	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039122875	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1512039174434	geckodriver	INFO	geckodriver 0.19.1
+1512039174440	geckodriver	INFO	Listening on 127.0.0.1:37323
+1512039175574	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.sR6OcIu7YMv5"
+1512039175983	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039175984	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039175993	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039175993	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039176205	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512039177804	Marionette	INFO	Listening on port 33479
+1512039177903	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512039178022	Marionette	DEBUG	Register listener.js for window 2147483649
+1512039178055	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512039178758	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512039181755	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039184939	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039185257	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512039185320	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039185440	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039185440	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039185744	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039186152	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039186197	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039186323	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039186324	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039186524	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039186914	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039186948	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039187079	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039187080	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039187279	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039187722	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039303042	geckodriver	INFO	geckodriver 0.19.1
+1512039303049	geckodriver	INFO	Listening on 127.0.0.1:57721
+1512039304166	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BEwFOFp8GjzI"
+1512039304516	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039304516	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039304521	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039304522	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039304687	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512039306233	Marionette	INFO	Listening on port 43335
+1512039306283	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512039306381	Marionette	DEBUG	Register listener.js for window 2147483649
+1512039306432	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512039307104	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512039309332	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039312010	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039312329	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512039312433	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039312561	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039312562	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039312663	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039313104	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039313146	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039313278	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039313279	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039313380	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039313812	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039313860	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039313987	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039313988	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039314103	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039314513	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039623764	geckodriver	INFO	geckodriver 0.19.1
+1512039623770	geckodriver	INFO	Listening on 127.0.0.1:33077
+1512039624893	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1MqdBOdDuM14"
+1512039625259	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039625260	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039625264	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039625265	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039625444	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512039627008	Marionette	INFO	Listening on port 35341
+1512039627109	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512039627231	Marionette	DEBUG	Register listener.js for window 2147483649
+1512039627253	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512039629960	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512039631322	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039633177	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039633478	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512039633575	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039633692	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039633693	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039633978	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039634426	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039634467	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039634590	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039634593	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039634796	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039635197	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039635226	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039635351	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039635352	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039635548	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039636150	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039903296	geckodriver	INFO	geckodriver 0.19.1
+1512039903302	geckodriver	INFO	Listening on 127.0.0.1:36421
+1512039904429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.OjtAT0U6rQSC"
+1512039904775	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039904776	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039904781	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512039904781	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512039904936	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512039906561	Marionette	INFO	Listening on port 39335
+1512039906642	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512039906739	Marionette	DEBUG	Register listener.js for window 2147483649
+1512039906766	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512039907493	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512039910381	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039913182	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039913484	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512039913626	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039913757	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039913758	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512039914043	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039914483	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039914523	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039914649	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039914651	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512039914862	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039915249	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039915283	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039915405	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039915406	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512039915622	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512039916019	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512040148328	geckodriver	INFO	geckodriver 0.19.1
+1512040148334	geckodriver	INFO	Listening on 127.0.0.1:53577
+1512040149456	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.TVZrzzqlccSN"
+1512040149831	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-GB@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512040149831	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512040149836	addons.xpi-utils	WARN	addMetadata: Add-on langpack-en-ZA@firefox.mozilla.org is invalid: Error: Install manifest specifies unknown type: null (resource://gre/modules/addons/XPIInstall.jsm:570:11) JS Stack trace: loadManifestFromRDF@XPIInstall.jsm:570:11 < loadFromRDF@XPIInstall.jsm:875:25 < loadManifestFromZipReader@XPIInstall.jsm:915:21 < loadManifestFromZipFile@XPIInstall.jsm:963:26 < this.loadManifestFromFile@XPIInstall.jsm:972:12 < syncLoadManifestFromFile@XPIProvider.jsm:928:3 < addMetadata@XPIProviderUtils.js:1176:21 < processFileChanges@XPIProviderUtils.js:1523:23 < checkForChanges@XPIProvider.jsm:3253:34 < startup@XPIProvider.jsm:2172:25 < callProvider@AddonManager.jsm:263:12 < _startProvider@AddonManager.jsm:730:5 < startup@AddonManager.jsm:897:9 < startup@AddonManager.jsm:3082:5 < observe@addonManager.js:65:9
+1512040149836	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1512040150001	Marionette	INFO	Enabled via --marionette
+JavaScript error: resource://gre/modules/addons/XPIProvider.jsm, line 3335: TypeError: addon is null
+1512040151621	Marionette	INFO	Listening on port 41937
+1512040151678	Marionette	WARN	TLS certificate errors will be ignored for this session
+1512040151776	Marionette	DEBUG	Register listener.js for window 2147483649
+1512040151815	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1512040152461	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1512040154831	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512040155942	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512040156273	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1512040156424	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512040156540	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512040156540	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+1512040156664	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512040157117	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512040157155	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512040157285	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512040157285	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html"
+1512040157394	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512040157800	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512040157827	Marionette	DEBUG	Received DOM event "beforeunload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512040157947	Marionette	DEBUG	Received DOM event "pagehide" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512040157949	Marionette	DEBUG	Received DOM event "unload" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/index-interpretations-and-actions-2010.html"
+1512040158050	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"
+1512040158494	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.occ.gov/topics/licensing/interpretations-and-actions/2010/interpretations-and-actions-mar-2010.html"

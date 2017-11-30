@@ -19,8 +19,8 @@
       <file leaf-file-name="metadata.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metadata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <caret line="100" column="56" lean-forward="false" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="56" />
+            <state relative-caret-position="-2566">
+              <caret line="124" column="56" lean-forward="false" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -42,11 +42,19 @@
       <find>interpretive_letter</find>
       <find>get_august_twenty_one_data</find>
       <find>match = re.search(r'\d{2}/\d{2}/\d{4}', table_data[i])</find>
-      <find>print</find>
-      <find>tbody</find>
       <find>y =</find>
-      <find>y</find>
       <find>p</find>
+      <find>letter_no_topic_cra_decision</find>
+      <find>date_href_cra_decision</find>
+      <find>letter_no_topic_approvals_with_conditions_enforceable</find>
+      <find>tbody</find>
+      <find>approvals</find>
+      <find>charters</find>
+      <find>get_common_table_data_march</find>
+      <find>tree</find>
+      <find>y</find>
+      <find>get_common_may_table_data</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,10 +198,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/occ/local/lib/python2.7/site-packages/lxml/html/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="860" column="4" lean-forward="false" selection-start-line="860" selection-start-column="4" selection-end-line="860" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/metadata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="100" column="56" lean-forward="false" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="56" />
+        <state relative-caret-position="-2566">
+          <caret line="124" column="56" lean-forward="false" selection-start-line="124" selection-start-column="56" selection-end-line="124" selection-end-column="56" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
