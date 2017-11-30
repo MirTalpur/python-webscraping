@@ -98,53 +98,39 @@ def get_common_table_data_march(path, type):
         letter_no_topic_approvals_with_conditions_enforceable.extend(table_data)
         date_href_approvals_with_conditions_enforceable.extend(date_href)
 
-def get_common_table_data_august(path,type):
-    '''
-    get the data from the august page
-    '''
-    table_data = tree.xpath(path + '//text()')
-    while 'Topic' in table_data: table_data.remove('Topic')
-    while '\n' in table_data: table_data.remove('\n')
-    while '\n\n' in table_data: table_data.remove('\n\n')
-    while 'Letter No.'in table_data: table_data.remove('Letter No.')
-    while '\r\n' in table_data: table_data.remove('\r\n')
-    while 'WORD' in table_data: table_data.remove('WORD')
-
-    for i in range(len(table_data)):
-        table_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in table_data[i]])
+def set_august_interpretive_letters(letter_no_data, type):
+    while 'WORD' in letter_no_data: letter_no_data.remove('WORD')
+    for i in range(len(letter_no_data)):
+        letter_no_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in letter_no_data[i]])
     dates = []
-    index_to_pop = []
-    for i in range(len(table_data)-1):
-        match = re.search(r'\d{2}/\d{2}/\d{4}', table_data[i])
-        if match:
-            dates.append(table_data[i])
-            index_to_pop.append(i)
-
-    for i in range(len(index_to_pop)):
-        table_data.pop(index_to_pop[i])
-    table_data_length = len(table_data)
-    match_last_element = re.search(r'\d{2}/\d{2}/\d{4}', table_data[table_data_length-1])
-    if match_last_element:
-        table_data.pop(table_data_length-1)
-    for i,value in enumerate(table_data):
-        match = re.search(r'\d{2}/\d{2}/\d{4}',value)
+    y = []
+    for i in range(len(letter_no_data)):
+        if re.search(r'\d{2}/\d{2}/\d{4}', letter_no_data[i]):
+            if len(letter_no_data[i]) > 11:
+                y.append(letter_no_data[i])
+            else:
+                dates.append(letter_no_data[i])
+        else:
+            y.append(letter_no_data[i])
+    for i, value in enumerate(y):
+        match = re.search(r'\d{2}/\d{2}/\d{4}', value)
         if match:
             date = datetime.strptime(match.group(), '%m/%d/%Y').date()
             dates.append(date.strftime('%m/%d/%Y'))
-    # for i in range(3, len(table_data), 3):
-    #     dates.append(table_data[i])
-    #     table_data.pop(i)
-    ahref_interpretives = tree.xpath(path + '//a/@href')
+    ahref_interpretives = tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]' + '//a/@href')
     date_href = []
-    for date,ahref_interpretive in zip(dates,ahref_interpretives):
+    for date, ahref_interpretive in zip(dates, ahref_interpretives):
         date_href.append(date)
         date_href.append(ahref_interpretive)
     if type == 'interpretive':
-        letter_no_topic_interpretive_letter.extend(table_data)
+        letter_no_topic_interpretive_letter.extend(y)
         date_href_interpretive_letter.extend(date_href)
-    elif type == 'cra':
-        letter_no_topic_cra_decision.extend(table_data)
-        date_href_cra_decision.extend(date_href)
+    elif type == 'corporate':
+        letter_no_topic_corporate_decisions.extend(y)
+        date_href_corporate_decisions.extend(date_href)
+    elif type == 'approvals':
+        letter_no_topic_approvals_with_conditions_enforceable.extend(y)
+        date_href_approvals_with_conditions_enforceable.extend(date_href)
 
 def get_august_interpretive_letters(tree):
     letter_no_data = []
@@ -157,18 +143,7 @@ def get_august_interpretive_letters(tree):
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[4]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[4]/td[2]' + '//text()'))
 
-    while 'WORD' in letter_no_data: letter_no_data.remove('WORD')
-    for i in range(len(letter_no_data)):
-        letter_no_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in letter_no_data[i]])
-    dates = []
-    index_to_pop = []
-    for i in range(len(letter_no_data) - 1):
-        match = re.search(r'\d{2}/\d{2}/\d{4}', letter_no_data[i])
-        if match:
-            dates.append(letter_no_data[i])
-            index_to_pop.append(i)
-    for i in range(len(index_to_pop)):
-        letter_no_data.pop(index_to_pop[i])
+    set_august_interpretive_letters(letter_no_data,'interpretive')
 
 def get_august_twenty_one_data(tree):
     '''
