@@ -244,8 +244,6 @@ def get_august_twenty_one_data(tree):
     get_august_corporate(tree)
     get_august_approvals(tree)
     get_august_charters(tree)
-    # get_common_table_data_august('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]','interpretive')
-    # get_common_table_data_august('/html/body/table[2]/tr/td[2]/table/tr/td/table[2]','cra')
 
 def get_march_twenty_ten_data(tree):
     '''
@@ -254,8 +252,6 @@ def get_march_twenty_ten_data(tree):
     get_common_table_data_march('//*[@id="maincontent"]/table[1]','interpretive')
     get_common_table_data_march('//*[@id="maincontent"]/table[2]','corporate')
     get_common_table_data_march('//*[@id="maincontent"]/table[3]','approvals')
-
-
 
 if __name__ == '__main__':
     '''
