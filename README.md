@@ -28,4 +28,6 @@ tree form.
 # Special Note
 I used selenium to navigate to needed urls and interact with the webpage on the first March 2010 link. After that I stopped using it
 just so it can save sometime and directly got to the data required from the pages using `requests.get(URL)`
+
 This could be more modularized and created as a seperate class however, this might be overkill for now but might be a nice to have later.
+Also this can use DRY(Don't repeat yourself)
