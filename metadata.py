@@ -4,50 +4,47 @@ from selenium import webdriver
 from datetime import datetime
 import re
 import csv
-# Note I use selenium to navigate to needed urls and interact with the webpage
-# if this is not needed please let me know and I can make the needed changes required
-# But I assumed the given URL in the project documentation was the only one you can go to
-# directly and the rest of them required some sort of scripting
-# For example I can directly go to https://www.occ.gov/topics/licensing/interpretations-and-actions/interpretations-and-actions-archive.html
-# which has the entire achieve instead of the given starting link provided in the assignment and
-# finding the metadata on that page becomes easy that way however I wanted the script to use the START
-# URL and navigate to the needed information
-# For webdriver I used selenium firefox for this you need firefox and geicko installed
-# https://github.com/mozilla/geckodriver/releases
-# I'm not sure which OS you are on so it's a bit different for each OS
-
-# GamePlan:
-# So essentially use selenium to get to where u want to go
-# and than in order to get the data use lxml for the parsing and content in tree form
-# but use request library to get the html content of the page
 
 # Start URL Provided in documentation for assignment
 START_URL = "https://www.occ.gov/topics/licensing/interpretations-and-actions/index-interpretations-and-actions.html"
+# Interpretive letter data for the Letter No and the Topic
 letter_no_topic_interpretive_letter = []
+# Data for all the interpretive letters date and href links
 date_href_interpretive_letter = []
+# Corporate decisions data for the Letter No and the Topic
 letter_no_topic_corporate_decisions = []
+# Corporate decisions data letters date and href links
 date_href_corporate_decisions = []
+# Letter topic approvals data for the Letter No and the Topic
 letter_no_topic_approvals_with_conditions_enforceable = []
+# Letter topic approvals data for the Letter date and href links
 date_href_approvals_with_conditions_enforceable = []
+# Topic CRA decisions data for the Letter No and the Topic
 letter_no_topic_cra_decision = []
+# Topic CRA decisions data for the date and href links
 date_href_cra_decision = []
+# Letter No. Charters
 letter_no_topic_charters = []
+# Date and href links for charters
 date_href_charters = []
+
 
 def output_to_csv():
     '''
-    Output the data to a csv
+    Outputs the data to a csv
     '''
     with open('filename.csv', 'wb') as myfile:
         wr = csv.writer(myfile, quoting=csv.QUOTE_ALL)
         wr.writerow(["Interpretations and Actions"])
         wr.writerow(('Letter No.', 'Topic','Date', 'href'))
         for i in range(0, len(letter_no_topic_interpretive_letter), 2):
-            wr.writerow((letter_no_topic_interpretive_letter[i], letter_no_topic_interpretive_letter[i + 1], date_href_interpretive_letter[i], date_href_interpretive_letter[i+1]))
+            wr.writerow((letter_no_topic_interpretive_letter[i], letter_no_topic_interpretive_letter[i + 1],
+                         date_href_interpretive_letter[i], date_href_interpretive_letter[i+1]))
         wr.writerow(["Corporate Decisions"])
         wr.writerow(('Letter No.', 'Topic','Date', 'href'))
         for i in range(0, len(letter_no_topic_corporate_decisions), 2):
-            wr.writerow((letter_no_topic_corporate_decisions[i], letter_no_topic_corporate_decisions[i + 1], date_href_corporate_decisions[i], date_href_corporate_decisions[i+1]))
+            wr.writerow((letter_no_topic_corporate_decisions[i], letter_no_topic_corporate_decisions[i + 1],
+                         date_href_corporate_decisions[i], date_href_corporate_decisions[i+1]))
         wr.writerow(["Approvals with Conditions Enforceable under 12 U.S.C. 1818"])
         wr.writerow(('Letter No.', 'Topic', 'Date', 'href'))
         for i in range(0, len(letter_no_topic_approvals_with_conditions_enforceable), 2):
@@ -55,45 +52,46 @@ def output_to_csv():
         wr.writerow(["CRA Decisions"])
         wr.writerow(('Letter No.', 'Topic', 'Date', 'href'))
         for i in range(0, len(letter_no_topic_cra_decision), 2):
-            wr.writerow((letter_no_topic_cra_decision[i],
-                         letter_no_topic_cra_decision[i + 1],
-                         date_href_cra_decision[i],
-                         date_href_cra_decision[i + 1]))
+            wr.writerow((letter_no_topic_cra_decision[i], letter_no_topic_cra_decision[i + 1],
+                         date_href_cra_decision[i], date_href_cra_decision[i + 1]))
         wr.writerow(["Charters with standard conditions"])
         wr.writerow(('Letter No.', 'Topic', 'Date', 'href'))
         for i in range(0, len(letter_no_topic_cra_decision), 2):
-            wr.writerow((letter_no_topic_charters[i],
-                         letter_no_topic_charters[i + 1],
-                         date_href_charters[i],
-                         date_href_charters[i + 1]))
+            wr.writerow((letter_no_topic_charters[i], letter_no_topic_charters[i + 1],
+                         date_href_charters[i], date_href_charters[i + 1]))
+
 
 def get_common_table_data_march(path, type):
     '''
     get common table data from the march page
-    essentially most of the data follows the same format at least on the march page
+    essentially most of the data in the march page follows the same format
     '''
     table_data = tree.xpath(path + '//text()')
+    # remove all data not required
     while 'Topic' in table_data: table_data.remove('Topic')
     while '\n' in table_data: table_data.remove('\n')
     while '\n\n' in table_data: table_data.remove('\n\n')
     while 'Letter No.'in table_data: table_data.remove('Letter No.')
     while ' (PDF)' in table_data: table_data.remove(' (PDF)')
+    # make sure we can use save to csv
     for i in range(1,len(table_data),2):
         table_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in table_data[i]])
     # add all of the date
     dates = []
+    # check the regex matches for the date
     for i,value in enumerate(table_data[1::2]):
         match = re.search(r'\d{2}/\d{2}/\d{4}',value)
         if match:
+            # if a match append it to dates
             date = datetime.strptime(match.group(), '%m/%d/%Y').date()
             dates.append(date.strftime('%m/%d/%Y'))
-
+    # get all the a href
     ahref_interpretives = tree.xpath(path + '//a/@href')
     date_href = []
     for date,ahref_interpretive in zip(dates,ahref_interpretives):
         date_href.append(date)
         date_href.append(ahref_interpretive)
-    # table_data.extend(ahref_interpretive)
+    # Update the main list with respect to table type
     if type == 'interpretive':
         letter_no_topic_interpretive_letter.extend(table_data)
         date_href_interpretive_letter.extend(date_href)
@@ -104,21 +102,30 @@ def get_common_table_data_march(path, type):
         letter_no_topic_approvals_with_conditions_enforceable.extend(table_data)
         date_href_approvals_with_conditions_enforceable.extend(date_href)
 
+
 def get_common_may_table_data(path,type):
+    '''
+    get common table data from the may page
+    essentially most of the data in the may page follows the same format
+    '''
     table_data = tree.xpath(path + '//text()')
+    # Remove not needed data
     while 'Topic' in table_data: table_data.remove('Topic')
     while '\n' in table_data: table_data.remove('\n')
     while '\n\n' in table_data: table_data.remove('\n\n')
     while 'Letter No.'in table_data: table_data.remove('Letter No.')
     while ' (PDF)' in table_data: table_data.remove(' (PDF)')
+    # Remove non ascii values for csv
     for i in range(len(table_data)):
         table_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in table_data[i]])
+    # get the dates
     dates = []
     for i, value in enumerate(table_data):
         match = re.search(r'(\d{2}/\d{2}/\d{2})', value) or re.search(r'\d{2}/\d{2}/\d{2}', value)
         if match:
             date = datetime.strptime(match.group(), '%m/%d/%y').date()
             dates.append(date.strftime('%m/%d/%y'))
+    # get the a href links
     ahref_interpretives = tree.xpath(path + '//a/@href')
     if not ahref_interpretives:
         for i in range(len(dates)):
@@ -127,6 +134,7 @@ def get_common_may_table_data(path,type):
     for date,ahref_interpretive in zip(dates,ahref_interpretives):
         date_href.append(date)
         date_href.append(ahref_interpretive)
+    # set the type
     if type == 'interpretive':
         letter_no_topic_interpretive_letter.extend(table_data)
         date_href_interpretive_letter.extend(date_href)
@@ -137,26 +145,30 @@ def get_common_may_table_data(path,type):
         letter_no_topic_approvals_with_conditions_enforceable.extend(table_data)
         date_href_approvals_with_conditions_enforceable.extend(date_href)
 
+
 def get_may_nineteen_ninetysix_data(tree):
+    # get the data from the data tables and xpaths for may 1996
     get_common_may_table_data('//*[@id="maincontent"]/table[1]','interpretive')
     get_common_may_table_data('//*[@id="maincontent"]/table[2]','corporate')
     get_common_may_table_data('//*[@id="maincontent"]/table[3]','approvals')
 
-def set_august_interpretive_letters(letter_no_data, type,ahref_xpath):
+
+def set_august_common_data(letter_no_data, type, ahref_xpath):
+    # set all the august data
     while 'WORD' in letter_no_data: letter_no_data.remove('WORD')
     for i in range(len(letter_no_data)):
         letter_no_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in letter_no_data[i]])
     dates = []
-    y = []
+    data_tables = []
     for i in range(len(letter_no_data)):
         if re.search(r'\d{2}/\d{2}/\d{4}', letter_no_data[i]) or re.search(r'\d{1}/\d{2}/\d{4}', letter_no_data[i]):
             if len(letter_no_data[i]) > 11:
-                y.append(letter_no_data[i])
+                data_tables.append(letter_no_data[i])
             else:
                 dates.append(letter_no_data[i])
         else:
-            y.append(letter_no_data[i])
-    for i, value in enumerate(y):
+            data_tables.append(letter_no_data[i])
+    for i, value in enumerate(data_tables):
         match = re.search(r'\d{2}/\d{2}/\d{4}', value)
         if match:
             date = datetime.strptime(match.group(), '%m/%d/%Y').date()
@@ -167,22 +179,24 @@ def set_august_interpretive_letters(letter_no_data, type,ahref_xpath):
         date_href.append(date)
         date_href.append(ahref_interpretive)
     if type == 'interpretive':
-        letter_no_topic_interpretive_letter.extend(y)
+        letter_no_topic_interpretive_letter.extend(data_tables)
         date_href_interpretive_letter.extend(date_href)
     elif type == 'corporate':
-        letter_no_topic_corporate_decisions.extend(y)
+        letter_no_topic_corporate_decisions.extend(data_tables)
         date_href_corporate_decisions.extend(date_href)
     elif type == 'approvals':
-        letter_no_topic_approvals_with_conditions_enforceable.extend(y)
+        letter_no_topic_approvals_with_conditions_enforceable.extend(data_tables)
         date_href_approvals_with_conditions_enforceable.extend(date_href)
     elif type == 'cra':
-        letter_no_topic_cra_decision.extend(y)
+        letter_no_topic_cra_decision.extend(data_tables)
         date_href_cra_decision.extend(date_href)
     elif type == 'charters':
-        letter_no_topic_charters.extend(y)
+        letter_no_topic_charters.extend(data_tables)
         date_href_charters.extend(date_href)
 
+
 def get_august_interpretive_letters(tree):
+    # get all the data needed from the august intereptive data table
     letter_no_data = []
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[2]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[2]/td[2]' + '//text()'))
@@ -193,15 +207,19 @@ def get_august_interpretive_letters(tree):
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[4]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[4]/td[2]' + '//text()'))
 
-    set_august_interpretive_letters(letter_no_data,'interpretive','/html/body/table[2]/tr/td[2]/table/tr/td/table[1]')
+    set_august_common_data(letter_no_data, 'interpretive', '/html/body/table[2]/tr/td[2]/table/tr/td/table[1]')
+
 
 def get_august_cra(tree):
+    # get all the data needed from the cra data table
     letter_no_data = []
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[2]/tr[2]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[2]/tr[2]/td[2]' + '//text()'))
-    set_august_interpretive_letters(letter_no_data,'cra','/html/body/table[2]/tr/td[2]/table/tr/td/table[2]/tr[2]/td[1]')
+    set_august_common_data(letter_no_data, 'cra', '/html/body/table[2]/tr/td[2]/table/tr/td/table[2]/tr[2]/td[1]')
+
 
 def get_august_corporate(tree):
+    # get all the data needed from the corporate data table
     letter_no_data = []
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[2]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[2]/td[2]' + '//text()'))
@@ -218,9 +236,11 @@ def get_august_corporate(tree):
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[6]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[6]/td[2]' + '//text()'))
 
-    set_august_interpretive_letters(letter_no_data, 'corporate', '/html/body/table[2]/tr/td[2]/table/tr/td/table[3]')
+    set_august_common_data(letter_no_data, 'corporate', '/html/body/table[2]/tr/td[2]/table/tr/td/table[3]')
+
 
 def get_august_approvals(tree):
+    # get all the data needed from the approvals data table
     letter_no_data = []
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[2]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[2]/td[2]' + '//text()'))
@@ -228,33 +248,36 @@ def get_august_approvals(tree):
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[3]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[3]/td[2]' + '//text()'))
 
-    set_august_interpretive_letters(letter_no_data, 'approvals', '/html/body/table[2]/tr/td[2]/table/tr/td/table[4]')
+    set_august_common_data(letter_no_data, 'approvals', '/html/body/table[2]/tr/td[2]/table/tr/td/table[4]')
+
 
 def get_august_charters(tree):
+    # get all the data needed from the august charters data table
     letter_no_data = []
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[5]/tr[2]/td[1]' + '//text()'))
     letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[5]/tr[2]/td[2]' + '//text()'))
-    set_august_interpretive_letters(letter_no_data,'charters', '/html/body/table[2]/tr/td[2]/table/tr/td/table[5]')
+    set_august_common_data(letter_no_data, 'charters', '/html/body/table[2]/tr/td[2]/table/tr/td/table[5]')
+
 
 def get_august_twenty_one_data(tree):
-    '''
-    '''
+    # get all the data needed for  august
     get_august_interpretive_letters(tree)
     get_august_cra(tree)
     get_august_corporate(tree)
     get_august_approvals(tree)
     get_august_charters(tree)
 
+
 def get_march_twenty_ten_data(tree):
-    '''
-    '''
-    # get the interpretive letter just in case the name changes later
+    # gets the march 2010 data
     get_common_table_data_march('//*[@id="maincontent"]/table[1]','interpretive')
     get_common_table_data_march('//*[@id="maincontent"]/table[2]','corporate')
     get_common_table_data_march('//*[@id="maincontent"]/table[3]','approvals')
 
 if __name__ == '__main__':
     '''
+    Works as the main script and controls the actions taken and functions called to
+    retrieve all of the data required 
     '''
     # Go to start url page given in the project assignment
     driver = webdriver.Firefox()
@@ -290,11 +313,15 @@ if __name__ == '__main__':
     page = requests.get('https://www.occ.gov/static/interpretations-and-precedents/aug01/intaug01.html')
     tree = html.fromstring(page.content)
 
+    # get all the august data
     get_august_twenty_one_data(tree)
 
+    # get all the data for may
     page = requests.get('https://www.occ.gov/topics/licensing/interpretations-and-actions/1996/interpretations-and-actions-may-1996.html')
     tree = html.fromstring(page.content)
     get_may_nineteen_ninetysix_data(tree)
 
+    # output the csv required
     output_to_csv()
+    # close the firefox driver
     driver.close()
