@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33fa04e4-f5e9-4331-8ffa-e300bb386972" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +17,7 @@
       <file leaf-file-name="metadata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metadata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
+            <state relative-caret-position="467">
               <caret line="325" column="30" lean-forward="false" selection-start-line="325" selection-start-column="30" selection-end-line="325" selection-end-column="30" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            <state relative-caret-position="352">
+              <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -76,10 +77,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="x" value="76" />
+    <option name="y" value="30" />
+    <option name="width" value="1299" />
+    <option name="height" value="764" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -216,7 +217,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/metadata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
+        <state relative-caret-position="467">
           <caret line="325" column="30" lean-forward="false" selection-start-line="325" selection-start-column="30" selection-end-line="325" selection-end-column="30" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -226,8 +227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        <state relative-caret-position="352">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding />
         </state>
       </provider>
