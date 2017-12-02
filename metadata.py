@@ -61,7 +61,24 @@ def output_to_csv():
                          date_href_charters[i], date_href_charters[i + 1]))
 
 
-def get_common_table_data_march(path, type):
+def get_dates(dates, month_year,table_data):
+    if month_year == 'march2010':
+        for i, value in enumerate(table_data):
+            match = re.search(r'\d{2}/\d{2}/\d{4}', value)
+            if match:
+                # if a match append it to dates
+                date = datetime.strptime(match.group(), '%m/%d/%Y').date()
+                dates.append(date.strftime('%m/%d/%Y'))
+    else:
+        # month_year == 'august2001':
+        for i, value in enumerate(table_data):
+            match = re.search(r'(\d{2}/\d{2}/\d{2})', value) or re.search(r'\d{2}/\d{2}/\d{2}', value)
+            if match:
+                date = datetime.strptime(match.group(), '%m/%d/%y').date()
+                dates.append(date.strftime('%m/%d/%y'))
+
+
+def get_common_table_data(path, type, month_year):
     '''
     get common table data from the march page
     essentially most of the data in the march page follows the same format
@@ -71,22 +88,19 @@ def get_common_table_data_march(path, type):
     while 'Topic' in table_data: table_data.remove('Topic')
     while '\n' in table_data: table_data.remove('\n')
     while '\n\n' in table_data: table_data.remove('\n\n')
-    while 'Letter No.'in table_data: table_data.remove('Letter No.')
+    while 'Letter No.' in table_data: table_data.remove('Letter No.')
     while ' (PDF)' in table_data: table_data.remove(' (PDF)')
     # make sure we can use save to csv
-    for i in range(1,len(table_data),2):
+    for i in range(len(table_data)):
         table_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in table_data[i]])
     # add all of the date
     dates = []
-    # check the regex matches for the date
-    for i,value in enumerate(table_data[1::2]):
-        match = re.search(r'\d{2}/\d{2}/\d{4}',value)
-        if match:
-            # if a match append it to dates
-            date = datetime.strptime(match.group(), '%m/%d/%Y').date()
-            dates.append(date.strftime('%m/%d/%Y'))
+    get_dates(dates, month_year, table_data)
     # get all the a href
     ahref_interpretives = tree.xpath(path + '//a/@href')
+    if not ahref_interpretives:
+        for i in range(len(dates)):
+            ahref_interpretives.append('No link prvoided')
     date_href = []
     for date,ahref_interpretive in zip(dates,ahref_interpretives):
         date_href.append(date)
@@ -103,54 +117,11 @@ def get_common_table_data_march(path, type):
         date_href_approvals_with_conditions_enforceable.extend(date_href)
 
 
-def get_common_may_table_data(path,type):
-    '''
-    get common table data from the may page
-    essentially most of the data in the may page follows the same format
-    '''
-    table_data = tree.xpath(path + '//text()')
-    # Remove not needed data
-    while 'Topic' in table_data: table_data.remove('Topic')
-    while '\n' in table_data: table_data.remove('\n')
-    while '\n\n' in table_data: table_data.remove('\n\n')
-    while 'Letter No.'in table_data: table_data.remove('Letter No.')
-    while ' (PDF)' in table_data: table_data.remove(' (PDF)')
-    # Remove non ascii values for csv
-    for i in range(len(table_data)):
-        table_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in table_data[i]])
-    # get the dates
-    dates = []
-    for i, value in enumerate(table_data):
-        match = re.search(r'(\d{2}/\d{2}/\d{2})', value) or re.search(r'\d{2}/\d{2}/\d{2}', value)
-        if match:
-            date = datetime.strptime(match.group(), '%m/%d/%y').date()
-            dates.append(date.strftime('%m/%d/%y'))
-    # get the a href links
-    ahref_interpretives = tree.xpath(path + '//a/@href')
-    if not ahref_interpretives:
-        for i in range(len(dates)):
-            ahref_interpretives.append('No link prvoided')
-    date_href = []
-    for date,ahref_interpretive in zip(dates,ahref_interpretives):
-        date_href.append(date)
-        date_href.append(ahref_interpretive)
-    # set the type
-    if type == 'interpretive':
-        letter_no_topic_interpretive_letter.extend(table_data)
-        date_href_interpretive_letter.extend(date_href)
-    elif type == 'corporate':
-        letter_no_topic_corporate_decisions.extend(table_data)
-        date_href_corporate_decisions.extend(date_href)
-    elif type == 'approvals':
-        letter_no_topic_approvals_with_conditions_enforceable.extend(table_data)
-        date_href_approvals_with_conditions_enforceable.extend(date_href)
-
-
 def get_may_nineteen_ninetysix_data(tree):
     # get the data from the data tables and xpaths for may 1996
-    get_common_may_table_data('//*[@id="maincontent"]/table[1]','interpretive')
-    get_common_may_table_data('//*[@id="maincontent"]/table[2]','corporate')
-    get_common_may_table_data('//*[@id="maincontent"]/table[3]','approvals')
+    get_common_table_data('//*[@id="maincontent"]/table[1]','interpretive','may1996')
+    get_common_table_data('//*[@id="maincontent"]/table[2]','corporate','may1996')
+    get_common_table_data('//*[@id="maincontent"]/table[3]','approvals','may1996')
 
 
 def set_august_common_data(letter_no_data, type, ahref_xpath):
@@ -270,9 +241,9 @@ def get_august_twenty_one_data(tree):
 
 def get_march_twenty_ten_data(tree):
     # gets the march 2010 data
-    get_common_table_data_march('//*[@id="maincontent"]/table[1]','interpretive')
-    get_common_table_data_march('//*[@id="maincontent"]/table[2]','corporate')
-    get_common_table_data_march('//*[@id="maincontent"]/table[3]','approvals')
+    get_common_table_data('//*[@id="maincontent"]/table[1]','interpretive','march2010')
+    get_common_table_data('//*[@id="maincontent"]/table[2]','corporate','march2010')
+    get_common_table_data('//*[@id="maincontent"]/table[3]','approvals','march2010')
 
 if __name__ == '__main__':
     '''
