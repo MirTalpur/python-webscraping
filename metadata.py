@@ -56,7 +56,7 @@ def output_to_csv():
                          date_href_cra_decision[i], date_href_cra_decision[i + 1]))
         wr.writerow(["Charters with standard conditions"])
         wr.writerow(('Letter No.', 'Topic', 'Date', 'href'))
-        for i in range(0, len(letter_no_topic_cra_decision), 2):
+        for i in range(0, len(letter_no_topic_charters), 2):
             wr.writerow((letter_no_topic_charters[i], letter_no_topic_charters[i + 1],
                          date_href_charters[i], date_href_charters[i + 1]))
 
@@ -69,13 +69,30 @@ def get_dates(dates, month_year,table_data):
                 # if a match append it to dates
                 date = datetime.strptime(match.group(), '%m/%d/%Y').date()
                 dates.append(date.strftime('%m/%d/%Y'))
-    else:
-        # month_year == 'august2001':
+        return  table_data
+    elif month_year == 'may1996':
         for i, value in enumerate(table_data):
             match = re.search(r'(\d{2}/\d{2}/\d{2})', value) or re.search(r'\d{2}/\d{2}/\d{2}', value)
             if match:
                 date = datetime.strptime(match.group(), '%m/%d/%y').date()
                 dates.append(date.strftime('%m/%d/%y'))
+        return table_data
+    else:
+        data_tables = []
+        for i in range(len(table_data)):
+            if re.search(r'\d{2}/\d{2}/\d{4}', table_data[i]) or re.search(r'\d{1}/\d{2}/\d{4}', table_data[i]):
+                if len(table_data[i]) > 11:
+                    data_tables.append(table_data[i])
+                else:
+                    dates.append(table_data[i])
+            else:
+                data_tables.append(table_data[i])
+        for i, value in enumerate(data_tables):
+            match = re.search(r'\d{2}/\d{2}/\d{4}', value)
+            if match:
+                date = datetime.strptime(match.group(), '%m/%d/%Y').date()
+                dates.append(date.strftime('%m/%d/%Y'))
+        return data_tables
 
 
 def get_common_table_data(path, type, month_year):
@@ -90,12 +107,16 @@ def get_common_table_data(path, type, month_year):
     while '\n\n' in table_data: table_data.remove('\n\n')
     while 'Letter No.' in table_data: table_data.remove('Letter No.')
     while ' (PDF)' in table_data: table_data.remove(' (PDF)')
+    while 'WORD' in table_data: table_data.remove('WORD')
+    while '\r\n' in table_data: table_data.remove('\r\n')
+    while '\r\n\r\n' in table_data: table_data.remove('\r\n\r\n')
+    while '\r\n\r\n\r\n' in table_data: table_data.remove('\r\n\r\n\r\n')
     # make sure we can use save to csv
     for i in range(len(table_data)):
         table_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in table_data[i]])
     # add all of the date
     dates = []
-    get_dates(dates, month_year, table_data)
+    table_data = get_dates(dates, month_year, table_data)
     # get all the a href
     ahref_interpretives = tree.xpath(path + '//a/@href')
     if not ahref_interpretives:
@@ -115,6 +136,12 @@ def get_common_table_data(path, type, month_year):
     elif type == 'approvals':
         letter_no_topic_approvals_with_conditions_enforceable.extend(table_data)
         date_href_approvals_with_conditions_enforceable.extend(date_href)
+    elif type == 'cra':
+        letter_no_topic_cra_decision.extend(table_data)
+        date_href_cra_decision.extend(date_href)
+    elif type == 'charters':
+        letter_no_topic_charters.extend(table_data)
+        date_href_charters.extend(date_href)
 
 
 def get_may_nineteen_ninetysix_data(tree):
@@ -123,120 +150,13 @@ def get_may_nineteen_ninetysix_data(tree):
     get_common_table_data('//*[@id="maincontent"]/table[2]','corporate','may1996')
     get_common_table_data('//*[@id="maincontent"]/table[3]','approvals','may1996')
 
-
-def set_august_common_data(letter_no_data, type, ahref_xpath):
-    # set all the august data
-    while 'WORD' in letter_no_data: letter_no_data.remove('WORD')
-    for i in range(len(letter_no_data)):
-        letter_no_data[i] = ''.join([j if ord(j) < 128 else ' ' for j in letter_no_data[i]])
-    dates = []
-    data_tables = []
-    for i in range(len(letter_no_data)):
-        if re.search(r'\d{2}/\d{2}/\d{4}', letter_no_data[i]) or re.search(r'\d{1}/\d{2}/\d{4}', letter_no_data[i]):
-            if len(letter_no_data[i]) > 11:
-                data_tables.append(letter_no_data[i])
-            else:
-                dates.append(letter_no_data[i])
-        else:
-            data_tables.append(letter_no_data[i])
-    for i, value in enumerate(data_tables):
-        match = re.search(r'\d{2}/\d{2}/\d{4}', value)
-        if match:
-            date = datetime.strptime(match.group(), '%m/%d/%Y').date()
-            dates.append(date.strftime('%m/%d/%Y'))
-    ahref_interpretives = tree.xpath(ahref_xpath + '//a/@href')
-    date_href = []
-    for date, ahref_interpretive in zip(dates, ahref_interpretives):
-        date_href.append(date)
-        date_href.append(ahref_interpretive)
-    if type == 'interpretive':
-        letter_no_topic_interpretive_letter.extend(data_tables)
-        date_href_interpretive_letter.extend(date_href)
-    elif type == 'corporate':
-        letter_no_topic_corporate_decisions.extend(data_tables)
-        date_href_corporate_decisions.extend(date_href)
-    elif type == 'approvals':
-        letter_no_topic_approvals_with_conditions_enforceable.extend(data_tables)
-        date_href_approvals_with_conditions_enforceable.extend(date_href)
-    elif type == 'cra':
-        letter_no_topic_cra_decision.extend(data_tables)
-        date_href_cra_decision.extend(date_href)
-    elif type == 'charters':
-        letter_no_topic_charters.extend(data_tables)
-        date_href_charters.extend(date_href)
-
-
-def get_august_interpretive_letters(tree):
-    # get all the data needed from the august intereptive data table
-    letter_no_data = []
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[2]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[2]/td[2]' + '//text()'))
-
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[3]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[3]/td[2]' + '//text()'))
-
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[4]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]/tr[4]/td[2]' + '//text()'))
-
-    set_august_common_data(letter_no_data, 'interpretive', '/html/body/table[2]/tr/td[2]/table/tr/td/table[1]')
-
-
-def get_august_cra(tree):
-    # get all the data needed from the cra data table
-    letter_no_data = []
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[2]/tr[2]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[2]/tr[2]/td[2]' + '//text()'))
-    set_august_common_data(letter_no_data, 'cra', '/html/body/table[2]/tr/td[2]/table/tr/td/table[2]/tr[2]/td[1]')
-
-
-def get_august_corporate(tree):
-    # get all the data needed from the corporate data table
-    letter_no_data = []
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[2]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[2]/td[2]' + '//text()'))
-
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[3]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[3]/td[2]' + '//text()'))
-
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[4]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[3]/td[2]' + '//text()'))
-
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[5]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[5]/td[2]' + '//text()'))
-
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[6]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]/tr[6]/td[2]' + '//text()'))
-
-    set_august_common_data(letter_no_data, 'corporate', '/html/body/table[2]/tr/td[2]/table/tr/td/table[3]')
-
-
-def get_august_approvals(tree):
-    # get all the data needed from the approvals data table
-    letter_no_data = []
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[2]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[2]/td[2]' + '//text()'))
-
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[3]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]/tr[3]/td[2]' + '//text()'))
-
-    set_august_common_data(letter_no_data, 'approvals', '/html/body/table[2]/tr/td[2]/table/tr/td/table[4]')
-
-
-def get_august_charters(tree):
-    # get all the data needed from the august charters data table
-    letter_no_data = []
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[5]/tr[2]/td[1]' + '//text()'))
-    letter_no_data.extend(tree.xpath('/html/body/table[2]/tr/td[2]/table/tr/td/table[5]/tr[2]/td[2]' + '//text()'))
-    set_august_common_data(letter_no_data, 'charters', '/html/body/table[2]/tr/td[2]/table/tr/td/table[5]')
-
-
 def get_august_twenty_one_data(tree):
     # get all the data needed for  august
-    get_august_interpretive_letters(tree)
-    get_august_cra(tree)
-    get_august_corporate(tree)
-    get_august_approvals(tree)
-    get_august_charters(tree)
+    get_common_table_data('/html/body/table[2]/tr/td[2]/table/tr/td/table[1]', 'interpretive','august2001')
+    get_common_table_data('/html/body/table[2]/tr/td[2]/table/tr/td/table[2]', 'cra', 'august2001')
+    get_common_table_data('/html/body/table[2]/tr/td[2]/table/tr/td/table[3]', 'corporate', 'august2001')
+    get_common_table_data('/html/body/table[2]/tr/td[2]/table/tr/td/table[4]', 'approvals', 'august2001')
+    get_common_table_data('/html/body/table[2]/tr/td[2]/table/tr/td/table[5]', 'charters', 'august2001')
 
 
 def get_march_twenty_ten_data(tree):
